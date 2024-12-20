@@ -25,7 +25,7 @@ fi
 
 # Ensure the script is run with three arguments
 # Only the first 3 arguments are required 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -lt 3 ]; then
     echo "Usage: $0 <domain_name> <number_of_loops> <subdomains_file_path> <number_of_predictions>"
     exit 1
 fi
